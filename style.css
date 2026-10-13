@@ -15,7 +15,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    
+
 }
 
 header {
@@ -29,7 +29,7 @@ header {
 
 nav {
     margin-left: auto;
-    padding: 0 20px;    
+    padding: 0 20px;
 }
 
 nav ul {
@@ -47,30 +47,30 @@ main {
     padding: 20px;
     background-image: url('./img/framsida.jpg');
     background-size: cover;
-    height: 1000px; 
+    height: 1000px;
     text-align: center;
     align-items: center;
 }
 
-main ul{
+main ul {
     list-style-type: none;
 }
 
-main .center{
+main .center {
     background-color: rgba(255, 255, 255, 0.8);
     margin: 0 auto;
     font-size: 1.2rem;
 }
 
-main .center .home{
+main .center .home {
     padding: 40px;
 }
 
-main .center .menu{
+main .center .menu {
     padding: 40px;
 }
 
-main .center .menu-category{
+main .center .menu-category {
     font-weight: bold;
 }
 
@@ -95,32 +95,47 @@ main .center .menu-category{
     }
 
     nav a {
-       text-decoration: none;
-       background-color: #ffffff70;
-       border-radius: 5px;
-       padding: 2px 5px;
-       margin: 0;
-       margin-left: 3px;
+        text-decoration: none;
+        background-color: #ffffff70;
+        border-radius: 5px;
+        padding: 2px 5px;
+        margin: 0;
+        margin-left: 3px;
     }
 
     main {
-        height: auto; 
+        background-image: url("./img/phone.jpg");
+        background-size: stretch;
+        height: auto;
     }
 
-    main .home{
+    main .home {
         font-size: 20px;
     }
 
-    main .menuHead{
+    main .home .map {
+        width: calc(100% + 5rem);
+        margin-left: -2.5rem;
+        margin-top: 20px;
+    }
+
+    main .home .map iframe {
+        display: block;
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    main .menuHead {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    main .menuHead h3:last-child{
+    main .menuHead h3:last-child {
         grid-column: 1 / -1;
     }
 
-    main .menuHead .menubtn{
+    main .menuHead .menubtn {
         background-color: #000000cd;
         border-radius: 5px;
         font-size: 16px;
@@ -129,7 +144,7 @@ main .center .menu-category{
         padding-bottom: 2px;
     }
 
-    .menubtn a{
+    .menubtn a {
         background-color: rgb(74, 147, 183);
         border-radius: 5px;
         display: block;
@@ -138,12 +153,20 @@ main .center .menu-category{
         text-decoration: none;
     }
 
-    .menu .menu-category{
+    .menu .menu-category {
         margin-top: 30px;
     }
 
-    .menu .price li{
+    .menu .price li {
         color: #000000;
         font-size: 20px;
+    }
+
+    footer {
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        background-color: #316e8d;
+        color: #fff;
     }
 }
