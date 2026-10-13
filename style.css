@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+header {
+    background: #316e8d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-left: auto;
+    padding: 0 20px;    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    color: #000000;
+    margin: 0 5px;
+    font-weight: bold;
+    list-style: none;
+}
+
+main {
+    padding: 20px;
+    background-image: url('./img/framsida.jpg');
+    background-size: cover;
+    height: 1000px; 
+    text-align: center;
+    align-items: center;
+}
+
+main ul{
+    list-style-type: none;
+}
+
+main .center{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+main .center .home{
+    padding: 40px;
+}
+
+main .center .menu{
+    padding: 40px;
+}
+
+main .center .menu-category{
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 7px;
+        background-color: #0000009a;
+        border-radius: 5px;
+    }
+
+    nav a {
+       text-decoration: none;
+       background-color: #ffffff70;
+       border-radius: 5px;
+       padding: 2px 5px;
+       margin: 0;
+       margin-left: 3px;
+    }
+
+    main {
+        height: auto; 
+    }
+
+    main .home{
+        font-size: 20px;
+    }
+
+    main .menuHead{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main .menuHead h3:last-child{
+        grid-column: 2;
+    }
+
+    main .menuHead .menubtn{
+        font-size: 12px;
+    }
+}
