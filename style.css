@@ -47,7 +47,6 @@ main {
     padding: 20px;
     background-image: url('./img/framsida.jpg');
     background-size: cover;
-    height: 1000px;
     text-align: center;
     align-items: center;
 }
@@ -64,6 +63,15 @@ main .center {
 
 main .center .home {
     padding: 40px;
+}
+
+main .menuHead {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .menuHead h3:last-child {
+    grid-column: 1 / -1;
 }
 
 main .center .menu {
@@ -105,7 +113,7 @@ main .center .menu-category {
 
     main {
         background-image: url("./img/phone.jpg");
-        background-size: stretch;
+        background-size: cover;
         height: auto;
     }
 
